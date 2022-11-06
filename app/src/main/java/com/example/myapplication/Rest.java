@@ -45,7 +45,8 @@ public class Rest extends Fragment {
         int cd = (time+1)* 1000;
         new CountDownTimer(cd, 1000) {
             public void onTick(long millisUntilFinished) {
-                tv.setText("Recupera per:   " + millisUntilFinished / 1000 + " secondi!");
+                tv.setText("Recupera per:   " +
+                        "" + millisUntilFinished / 1000 + " secondi!");
             }
 
             public void onFinish() {
